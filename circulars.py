@@ -24,6 +24,7 @@ with st.sidebar:
     choose = option_menu("Swarnandhra Exam Branch Info", ["About", "Circulars", "Notifications",  "Contact"],
                          icons=['house', 'bell', 'bell-fill', 'person lines fill'],
                          menu_icon="award", default_index=0,
+                         orientation="horizontal",
                          styles={
         "container": {"padding": "5!important", "background-color": "#fafafa"},
         "icon": {"color": "orange", "font-size": "25px"}, 

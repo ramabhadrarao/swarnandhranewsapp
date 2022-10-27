@@ -21,7 +21,7 @@ st.markdown(bootstrap,unsafe_allow_html=True)
 mydb = mysql.connector.connect(**st.secrets["mysql"])
 mycursor = mydb.cursor()
 #with st.sidebar:
-choose = option_menu("Swarnandhra Exam Branch Info", ["About", "Circulars", "Notifications",  "Contact"],
+choose = option_menu("Swarnandhra News", ["About", "Circulars", "Notifications",  "Contact"],
                          icons=['house', 'bell', 'bell-fill', 'person lines fill'],
                          menu_icon="award", default_index=0,
                          orientation="horizontal",

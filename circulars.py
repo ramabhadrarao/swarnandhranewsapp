@@ -10,7 +10,19 @@ logo = Image.open(r'swrnlogo.png')
 #import cv2
 #import plotly.express as px
 import io
-st.image(logo)
+
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write(' ')
+
+with col2:
+    st.image(logo)
+
+with col3:
+    st.write(' ')
+
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}

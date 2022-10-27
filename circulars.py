@@ -20,8 +20,8 @@ bootstrap="<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/boo
 st.markdown(bootstrap,unsafe_allow_html=True)
 mydb = mysql.connector.connect(**st.secrets["mysql"])
 mycursor = mydb.cursor()
-with st.sidebar:
-    choose = option_menu("Swarnandhra Exam Branch Info", ["About", "Circulars", "Notifications",  "Contact"],
+#with st.sidebar:
+choose = option_menu("Swarnandhra Exam Branch Info", ["About", "Circulars", "Notifications",  "Contact"],
                          icons=['house', 'bell', 'bell-fill', 'person lines fill'],
                          menu_icon="award", default_index=0,
                          orientation="horizontal",
